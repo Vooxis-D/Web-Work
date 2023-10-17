@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "font_form";
+    src: url(../assets/font/Gabarito-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: 'font_form';
+    overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to left top, #eb1219, #f6c319);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-shadow:3px 3px 8px rgb(80, 80, 80);
+    color: #ffff;
+    padding: 10px 20p;
+    text-align: center;
+    margin: 55px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formdivcontainer {
+    align-items: center;
+    color: #ffff;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 3.25rem;
+    width: 400px;
+    min-width: 400px;
+    height: auto;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 28px;
+    margin: 3rem 7rem;
+    background-color: rgba(220, 220, 220, 0.5);
+    box-shadow: 0 0 10px rgb(80, 80, 80);
+    transition: border 0.4s ease-out, box-shadow 0.4s ease, transform 0.4s ease-out;
+    
+}
+
+.formdivcontainer:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 40px rgb(80, 80, 80);
+    border: 2.5px solid rgb(238, 238, 238);
+}  
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.form label {
+    
+    font-size: 20px;
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
+.username {
+    display: block;
+    margin: 50px auto; 
+    min-height: 2.3rem;
+    width: 20rem;
+    border-radius: 2rem;
+    border: 2px solid rgb(224, 224, 224);
+    padding-left: 17px;
+}
+
+.pass {
+    display: block;
+    align-items: center;
+    margin: 50px 0;
+    min-height: 2.3rem;
+    width: 20rem;
+    border-radius: 2rem;
+    border: 2px solid rgb(224, 224, 224);
+    padding-left: 17px;
+    position: relative;
+}
+
+
+.password_box {
+    display: flex;
+    align-items: center;
+}
+
+.show_password {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    border: 0 solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 20rem;
+    right: 30px;
+    transform: translateY(-50%);
+}
+
+
+.show_password:active {
+    background-color: rgb(200, 200, 200);
+}
+
+.valider {
+    display: block;
+    margin: 0 auto;
+    height: 2.3rem;
+    background-color: rgb(255, 255, 255);
+    width: 15rem;
+    border-radius: 32px;
+    border: 2px solid rgb(224, 224, 224);
+    font-size: 17px;
+    transition: background-color 0.65s ;
+}
+
+.valider:hover {
+    background-color: rgb(255, 255, 255);
+    background-color: rgb(220, 220, 220);
+}
+
+.valueerror {
+    margin: 0 0;
+    color: rgb(255, 0, 0);
+}
+
